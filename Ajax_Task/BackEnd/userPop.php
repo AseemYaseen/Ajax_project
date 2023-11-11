@@ -5,7 +5,7 @@ session_start();
 $id = $_GET['id'];
 
         if(!$_SESSION['email']){
-            header('location:http://localhost/Csc_Task/BackEnd/Login.php');
+            header('location:http://localhost/Ajax_project/Ajax_Task/BackEnd/Login.php');
         } else {
             $sql = "SELECT * FROM users WHERE user_id = $id";
             $query = crud::connect()->prepare($sql);

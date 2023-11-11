@@ -6,7 +6,7 @@ class crud{
     public static function connect(){
         try{
 
-        $con=new PDO('mysql:localhost=localhost;dbname=csc_task','root','');
+        $con=new PDO('mysql:localhost=localhost;port=3333;dbname=ajax_task','root','');
 
         return $con;
 
@@ -78,5 +78,5 @@ public static function makeUnActive(){
 
 
 }
-
+crud::connect();
 ?>

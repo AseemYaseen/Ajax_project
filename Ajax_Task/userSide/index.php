@@ -98,7 +98,7 @@
       
       $.ajax({
         type: 'POST',
-        url: 'http://localhost/Csc_Task/BackEnd/Register.php',
+        url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/Register.php',
         data: {
           user_name: name,
           email: email,
@@ -115,7 +115,7 @@
             $('#success-message').html(response).show();
             $('#dup-message').html(errors).hide();
             $('#error-message').html(errors).hide();
-            window.location = "http://localhost/Csc_Task/userSide/login.php";
+            window.location = "http://localhost/Ajax_project/Ajax_Task/userSide/login.php";
           }
         }
       });

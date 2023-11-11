@@ -4,7 +4,7 @@
 session_start();
 
         if(!$_SESSION['email']){
-            header('location:http://localhost/Csc_Task/BackEnd/Login.php');
+            header('location:http://localhost/Ajax_project/Ajax_Task/BackEnd/Login.php');
         } else {
             $sql = "SELECT * FROM users WHERE is_admin = 0";
             $query = crud::connect()->prepare($sql);

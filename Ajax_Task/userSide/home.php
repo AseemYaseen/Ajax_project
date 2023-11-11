@@ -126,7 +126,7 @@
         $(document).ready(function() {      
                 $.ajax({
                 type: 'GET',
-                url: 'http://localhost/Csc_Task/BackEnd/userHomeData.php',
+                url: 'http://localhost/Ajax_Project/Ajax_Task/BackEnd/userHomeData.php',
                 success: function(response) {
                     var returnedData = JSON.parse(response);
                     var data = "";
@@ -160,7 +160,7 @@
         $(document).ready(function() {      
                 $.ajax({
                 type: 'GET',
-                url: 'http://localhost/Csc_Task/BackEnd/userHomeMark.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/userHomeMark.php',
                 success: function(response) {
                     var returnedData = JSON.parse(response);
                     var data = "";

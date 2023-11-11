@@ -288,7 +288,7 @@
         $(document).ready(function() {
             $.ajax({
                 type: 'GET',
-                url: 'http://localhost/Csc_Task/BackEnd/msgUsers.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/msgUsers.php',
                 success: function(response) {
                     var returnedData = JSON.parse(response);
                     var data = '<ul class="list-unstyled chat-list mt-2 mb-0">';
@@ -318,7 +318,7 @@
 
                 $.ajax({
                     type: 'POST',
-                    url: 'http://localhost/Csc_Task/BackEnd/sendMSG.php',
+                    url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/sendMSG.php',
                     data: {
                         reciverID: reciverID,
                         content: content,
@@ -348,7 +348,7 @@
             $('#hiddenRec').html(rec);
             $.ajax({
                 type: 'GET',
-                url: 'http://localhost/Csc_Task/BackEnd/msgBetweenUsers.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/msgBetweenUsers.php',
                 data: {
                     reciverID: id
                 },

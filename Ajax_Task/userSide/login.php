@@ -80,7 +80,7 @@
         
         $.ajax({
             type: 'POST',
-            url: 'http://localhost/Csc_Task/BackEnd/Login.php',
+            url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/Login.php',
             data: {
                 email: email,
                 password: password,
@@ -95,28 +95,28 @@
                   
                     if (response.startsWith('Alert :')){
                         alert('Your Account Still Not Active')
-                        window.location = "http://localhost/Csc_Task/userSide/login.php";
+                        window.location = "http://localhost/Ajax_project/Ajax_Task/userSide/login.php";
                     }
                     else {
                         console.log(response);
                         if (response.startsWith('1')){
                             console.log("Admin");
-                            window.location = "http://localhost/Csc_Task/Admin/dashboard.php";
+                            window.location = "http://localhost/Ajax_project/Ajax_Task/Admin/dashboard.php";
                         } 
                         else {
                             console.log("User");
-                            window.location = "http://localhost/Csc_Task/userSide/home.php";
+                            window.location = "http://localhost/Ajax_project/Ajax_Task/userSide/home.php";
                         }
                     }
 
                     // console.log(response);
                     //     if (response.startsWith('1')){
                     //         console.log("Admin");
-                    //         window.location = "http://localhost/Csc_Task/Admin/dashboard.php";
+                    //         window.location = "http://localhost/Ajax_project/Ajax_Task/Admin/dashboard.php";
                     //     } 
                     //     else {
                     //         console.log("User");
-                    //         window.location = "http://localhost/Csc_Task/userSide/home.php";
+                    //         window.location = "http://localhost/Ajax_project/Ajax_Task/userSide/home.php";
                     //     }
                 }
             }

@@ -307,7 +307,7 @@
         $(document).ready(function() {
             $.ajax({
                 type: 'GET',
-                url: 'http://localhost/Csc_Task/Admin/msgAdmin.php',
+                url: 'http://localhost//Admin/msgAdmin.php',
                 success: function(response) {
                     var returnedData = JSON.parse(response);
                     var data = '<ul class="list-unstyled chat-list mt-2 mb-0">';
@@ -333,10 +333,10 @@
                 e.preventDefault();
                 var reciverID = $('#reciver').val();
                 var content = $('#content').val();
-
+                
                 $.ajax({
                     type: 'POST',
-                    url: 'http://localhost/Csc_Task/Admin/sendMsgAdmin.php',
+                    url: 'http://localhost/Ajax_project/Ajax_Task/Admin/sendMsgAdmin.php',
                     data: {
                         reciverID: reciverID,
                         content: content,
@@ -366,7 +366,7 @@
             $('#hiddenRec').html(rec);
             $.ajax({
                 type: 'GET',
-                url: 'http://localhost/Csc_Task/Admin/msgBetweenAdmin.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/Admin/msgBetweenAdmin.php',
                 data: {
                     reciverID: id
                 },

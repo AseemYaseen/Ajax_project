@@ -353,7 +353,7 @@
             $(document).ready(function() {
               $.ajax({
                 type: 'GET',
-                url: 'http://localhost/Csc_Task/BackEnd/users.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/users.php',
                 success: function(response) {
                   var returnedData = JSON.parse(response);
                   var data = "";
@@ -395,7 +395,7 @@
             $(document).ready(function() {
               $.ajax({
                 type: 'POST',
-                url: 'http://localhost/Csc_Task/BackEnd/makeActive.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/makeActive.php',
                 data: {
                   id: id
                 },
@@ -413,7 +413,7 @@
             $(document).ready(function() {
               $.ajax({
                 type: 'POST',
-                url: 'http://localhost/Csc_Task/BackEnd/makeUnActive.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/makeUnActive.php',
                 data: {
                   id: id
                 },
@@ -434,7 +434,7 @@
 
               $.ajax({
                 type: 'POST',
-                url: 'http://localhost/Csc_Task/BackEnd/deleteUser.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/deleteUser.php',
                 data: {
                   id: id,
                 },
@@ -452,7 +452,7 @@
             $(document).ready(function() {
               $.ajax({
                 type: 'GET',
-                url: 'http://localhost/Csc_Task/BackEnd/userPop.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/userPop.php',
                 data: {
                   id: id
                 },
@@ -492,7 +492,7 @@
 
               $.ajax({
                 type: 'POST',
-                url: 'http://localhost/Csc_Task/BackEnd/userUpdate.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/userUpdate.php',
                 data: {
                   username: name,
                   email: email,
@@ -528,7 +528,7 @@
 
               $.ajax({
                 type: 'POST',
-                url: 'http://localhost/Csc_Task/BackEnd/addCourse.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/addCourse.php',
                 data: {
                   nameOfCourse: nameOfCourse,
                   minMark: minMark,
@@ -556,7 +556,7 @@
             $(document).ready(function() {
               $.ajax({
                 type: 'GET',
-                url: 'http://localhost/Csc_Task/BackEnd/getAllCourses.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/getAllCourses.php',
                 success: function(response) {
                   var coursesInfo = JSON.parse(response);
                   var data = "";
@@ -585,7 +585,7 @@
               var id = $('#CrsNameAssign').val();
               $.ajax({
                 type: 'GET',
-                url: 'http://localhost/Csc_Task/BackEnd/getNotAssignedStu.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/getNotAssignedStu.php',
                 data: {
                   id: id
                 },
@@ -617,7 +617,7 @@
 
               $.ajax({
                 type: 'POST',
-                url: 'http://localhost/Csc_Task/BackEnd/addStudentToCourse.php',
+                url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/addStudentToCourse.php',
                 data: {
                   nameOfCourse: nameOfCourse,
                   stuName: stuName,
@@ -648,7 +648,7 @@
             $(document).ready(function() {  
             $.ajax({
             type: 'GET',
-            url: 'http://localhost/Csc_Task/BackEnd/getAllCourses.php',
+            url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/getAllCourses.php',
             success: function(response) {
                 var coursesInfo = JSON.parse(response);
                 var data = "";
@@ -676,7 +676,7 @@
             var id = $('#CrsNameMark').val();
             $.ajax({
             type: 'GET',
-            url: 'http://localhost/Csc_Task/BackEnd/getAssignedStu.php',
+            url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/getAssignedStu.php',
             data : {id : id},
             success: function(response) {
                 var studentsInCourse = JSON.parse(response);
@@ -707,7 +707,7 @@
             
             $.ajax({
             type: 'POST',
-            url: 'http://localhost/Csc_Task/BackEnd/assignMark.php',
+            url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/assignMark.php',
             data: {
                 nameOfCourse : nameOfCourse,
                 StuNameMark : StuNameMark,

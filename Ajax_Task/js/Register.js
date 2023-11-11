@@ -15,7 +15,7 @@ $(document).ready(function() {
 
       $.ajax({
         type: 'POST',
-        url: 'http://localhost/Csc_Task/BackEnd/Register.php',
+        url: 'http://localhost/Ajax_project/Ajax_Task/BackEnd/Register.php',
         data: {
           user_name: name,
           email: email,

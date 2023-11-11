@@ -5,9 +5,9 @@ session_start();
 
 $id = $_POST['id'];
 
-$stmt = crud::makeUnActive();
+$stmt = crud::makeActive();
 $stmt->bindValue(':id', $id);
 $stmt->execute();
-header('Location: http://localhost/Csc_Task/Admin/dashboard.php');
+header('Location: http://localhost/Ajax_project/Ajax_Task/Admin/dashboard.php');
 exit;
 ?>
